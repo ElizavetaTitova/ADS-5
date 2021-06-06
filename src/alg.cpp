@@ -5,12 +5,12 @@
 
 template<typename T>
 class TPQueue {
-   struct ITEM {
+struct ITEM {
     T data;
     ITEM * next;
-   };
+};
  public:
-   TPQueue();
+TPQueue();
   ~TPQueue();
   void push(const T&);
   T pop();
@@ -71,8 +71,8 @@ T TPQueue<T>::pop() {
   }
 }
 struct SYM {
-   char ch;
-   int  prior;
+char ch;
+int  prior;
 };
 
 #endif // INCLUDE_TPQUEUE_H_
